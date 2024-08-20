@@ -1,0 +1,113 @@
+.btn-add{
+  padding: 12px 28px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--rose-900);
+  border-radius: 50px;
+  background-color: var(--white);
+  border: solid 1px var(--rose-400);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: -22px;
+  min-width: 160px;
+  min-height: 44px;
+}
+.btn-add::before{
+  content: '';
+  display: block;
+  background-image: url(./assets/images/icon-add-to-cart.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+.btn-add:hover{
+  color: var(--red);
+  border: solid 1px var(--red);
+}
+.btn-add.inativo{
+  display: none;
+}
+.btn-2{
+  background-color: var(--red);
+  font-size: 0.875rem;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--red);
+  min-width: 160px;
+  min-height: 44px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn-quantity{
+  padding: 12px 28px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  position: absolute;
+  bottom: -22px;
+  min-width: 160px;
+  min-height: 44px;
+  display: none;
+}
+.btn-quantity.ativo{
+  display: flex;
+}
+.btn-quantity:hover,
+.btn-2:hover{
+  background-color: var(--red-op);
+}
+.btn-quantity span{
+  color: var(--white);
+  font-size: 0.875rem;
+}
+.btn-increment,
+.btn-decrement{
+  background-color: var(--red);
+  width: 20px;
+  height: 20px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-increment:hover,
+.btn-decrement:hover{
+  background-color: var(--white);
+  color: var(--red);
+}
+
+.btn-remove{
+  background-color: var(--white);
+  width: 20px;
+  height: 20px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid var(--rose-400);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.btn-remove::after{
+  content: '';
+  background-image: url(./assets/images/icon-remove-item.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}

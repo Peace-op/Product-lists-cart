@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Product list cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="page-grid">
+    <div>
+      <h1 class="font-1-xx">Desserts</h1>
+      <ul class="itens-grid">
+        <li id="waffle">
+          <div class="product-grid">
+            <img src="./assets/images/image-waffle-desktop.jpg" alt="waffle" class="img-1">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span class="font-1-m color-red" data-quantity>1</span>
+              <button class="btn-increment"><img src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Waffle</p>
+          <h2 class="font-1-m color-rose-900">Waffle with Berries</h2>
+          <span class="font-1-m color-red">$6.50</span>
+        </li>
+        <li id="brule">
+          <div class="product-grid">
+            <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="brule" class="img-2">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span data-quantity>1</span>
+              <button class="btn-increment"><img src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Crème Brûlée</p>
+          <h2 class="font-1-m color-rose-900">Vanilla Bean Crème Brûlée</h2>
+          <span class="font-1-m color-red">$7.00</span>
+        </li>
+        <li id="macaron">
+          <div class="product-grid">
+            <img src="./assets/images/image-macaron-desktop.jpg" alt="macaron" class="img-3">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span data-quantity>1</span>
+              <button class="btn-increment"><img src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Macaron</p>
+          <h2 class="font-1-m color-rose-900">Macaron Mix of Five</h2>
+          <span class="font-1-m color-red">$8.00</span>
+        </li>
+        <li id="tiramisu">
+          <div class="product-grid">
+            <img src="./assets/images/image-tiramisu-desktop.jpg" alt="tiramisu" class="img-4">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span data-quantity>1</span>
+              <button class="btn-increment"><img src="./assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Tiramisu</p>
+          <h2 class="font-1-m color-rose-900">Classic Tiramisu</h2>
+          <span class="font-1-m color-red">$5.50</span>
+        </li>
+        <li id="baklava">
+          <div class="product-grid">
+            <img src="./assets/images/image-baklava-desktop.jpg" alt="baklava" class="img-5">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span data-quantity>1</span>
+              <button class="btn-increment"><img src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Baklava</p>
+          <h2 class="font-1-m color-rose-900">Pistachio Baklava</h2>
+          <span class="font-1-m color-red">$4.00</span>
+        </li>
+        <li id="pie">
+          <div class="product-grid">
+            <img src="./assets/images/image-meringue-desktop.jpg" alt="pie" class="img-6">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span data-quantity>1</span>
+              <button class="btn-increment"><img src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Pie</p>
+          <h2 class="font-1-m color-rose-900">Lemon Meringue Pie</h2>
+          <span class="font-1-m color-red">$5.00</span>
+        </li>
+        <li id="cake">
+          <div class="product-grid">
+            <img src="./assets/images/image-cake-desktop.jpg" alt="cake" class="img-7">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span data-quantity>1</span>
+              <button class="btn-increment"><img src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Cake</p>
+          <h2 class="font-1-m color-rose-900">Red Velvet Cake</h2>
+          <span class="font-1-m color-red">$4.50</span>
+        </li>
+        <li id="brownie">
+          <div class="product-grid">
+            <img src="./assets/images/image-brownie-desktop.jpg" alt="brownie" class="img-8">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span data-quantity>1</span>
+              <button class="btn-increment"><img src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Brownie</p>
+          <h2 class="font-1-m color-rose-900">Salted Caramel Brownie</h2>
+          <span class="font-1-m color-red">$4.50</span>
+        </li>
+        <li id="panna">
+          <div class="product-grid">
+            <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="panna" class="img-9">
+            <button class="btn-add">Add to Cart</button>
+            <div class="btn-quantity">
+              <button class="btn-decrement"><img src="./assets/images/icon-decrement-quantity.svg" alt=""></button>
+              <span data-quantity>1</span>
+              <button class="btn-increment"><img src="/assets/images/icon-increment-quantity.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="font-1-s color-rose-500">Panna Cotta</p>
+          <h2 class="font-1-m color-rose-900">Vanilla Panna Cotta</h2>
+          <span class="font-1-m color-red">$6.50</span>
+        </li>
+      </ul>
+    </div>
+    <div class="cart">
+      <h2 class="font-1-x-b color-red">Your Cart (<span class="cart-qtd">0</span>)</h2>
+      <div class="cart-empty ativo">
+        <img src="./assets/images/illustration-empty-cart.svg" alt="" width="128px" height="128px">
+        <p class="font-1-s color-rose-500">Your added items will appear here</p>
+      </div>
+      <ul class="cart-list">
+      </ul>
+      <div class="total-grid">
+        <div class="total-flex">
+          <span class="font-1-s color-rose-900">Order Total</span>
+          <span class="total-price font-1-x-b color-rose-900">$46.50</span>
+        </div>
+        <div class="total-carbon">
+          <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+          <p class="font-1-s color-rose-900">This is a <strong class="color-rose-900">carbon-neutral </strong>delivery</p>
+        </div>
+        <button class="btn-2 confirm">Confirm Order</button>
+      </div>
+    </div>
+    <div class="modal-container">
+      <div class="order-grid">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="">
+        <h2 class="font-1-xx color-rose-900">Order Confirmed</h2>
+        <p class="font-1-s color-rose-500">We hope you enjoy your food!</p>
+        <ul class="cart-order">
+        </ul>
+        <button class="btn-2 confirm" data-newOrder>Start new Order</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

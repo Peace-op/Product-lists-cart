@@ -1,0 +1,64 @@
+.modal-container{
+  position: fixed;
+  background: rgba(0, 0, 0, .5);
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: none;
+}
+.modal-container.ativo{
+  display: grid;
+}
+.order-grid{
+  background-color: var(--white);
+  padding: 40px;
+  display: grid;
+  gap: 8px;
+  border-radius: 8px;
+  min-width: 512px;
+  align-items: start;
+}
+.order-grid img{
+  margin-bottom: 16px;
+}
+.cart-order{
+  background-color: var(--rose-50);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.cart-order button{
+  display: none;
+}
+.cart-order li{
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-order .total-flex{
+  padding: 24px;
+}
+.cart-order .itens-info{
+  order: 2;
+}
+
+.cart-order .item-tot{
+  order: 3;
+  justify-self: end;
+  font: 600 1rem/1.5 "Red Hat Text", sans-serif;
+  color: var(--rose-900);
+}
+.cart-order img{
+  border-radius: 5px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0px;
+  display: inline;
+  order: 1;
+}

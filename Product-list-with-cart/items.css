@@ -1,0 +1,166 @@
+
+.page-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 8.5rem 7rem;
+  gap: 2rem;
+  align-items: start;
+}
+.itens-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem 1.5rem;
+}
+.itens-grid img{
+  border-radius: 5px;
+}
+.itens-grid h2{
+  margin: .25rem 0px .25rem 0px;
+}
+.cart{
+  padding: 1.5rem;
+  background-color: var(--white);
+}
+
+.product-grid{
+  display: grid;
+  justify-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.cart{
+  border-radius: 10px;
+}
+.cart h2{
+  margin-bottom: 1.5rem;
+}
+.cart-empty.ativo{
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+}
+.cart-empty img{
+  place-self: center;
+}
+.cart-empty{
+  display: none;
+}
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-item h2{
+  margin-bottom: .5rem;
+}
+.itens-info span{
+  margin-right: .5rem;
+}
+
+.total-grid{
+  display: none;
+}
+.total-grid.ativo{
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem 0px 1.5rem 0px;
+}
+
+.total-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-carbon{
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  background-color: var(--rose-50);
+  padding: 1rem 0rem 1rem 0rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 1440px){
+  .page-grid{
+    padding: 2.5rem;
+  }
+}
+
+
+@media (max-width: 950px){
+  .page-grid{
+    padding: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  .img-1{
+    content: url(./assets/images/image-waffle-tablet.jpg);
+  }
+  .img-2{
+    content: url(./assets/images/image-creme-brulee-tablet.jpg);
+  }
+  .img-3{
+    content: url(./assets/images/image-macaron-tablet.jpg);
+  }
+  .img-4{
+    content: url(./assets/images/image-tiramisu-tablet.jpg);
+  }
+  .img-5{
+    content: url(./assets/images/image-baklava-tablet.jpg);
+  }
+  .img-6{
+    content: url(./assets/images/image-meringue-tablet.jpg);
+  }
+  .img-7{
+    content: url(./assets/images/image-cake-tablet.jpg);
+  }
+  .img-8{
+    content: url(./assets/images/image-brownie-tablet.jpg);
+  }
+  .img-9{
+    content: url(./assets/images/image-panna-cotta-tablet.jpg);
+  }
+}
+
+@media (max-width: 650px){
+  .page-grid{
+    padding: 1.5rem;
+  }
+  .itens-grid{
+    grid-template-columns: 1fr;
+  }
+  .img-1{
+    content: url(./assets/images/image-waffle-mobile.jpg);
+  }
+  .img-2{
+    content: url(./assets/images/image-creme-brulee-mobile.jpg);
+  }
+  .img-3{
+    content: url(./assets/images/image-macaron-mobile.jpg);
+  }
+  .img-4{
+    content: url(./assets/images/image-tiramisu-mobile.jpg);
+  }
+  .img-5{
+    content: url(./assets/images/image-baklava-mobile.jpg);
+  }
+  .img-6{
+    content: url(./assets/images/image-meringue-mobile.jpg);
+  }
+  .img-7{
+    content: url(./assets/images/image-cake-mobile.jpg);
+  }
+  .img-8{
+    content: url(./assets/images/image-brownie-mobile.jpg);
+  }
+  .img-9{
+    content: url(./assets/images/image-panna-cotta-mobile.jpg);
+  }
+  .modal-container .order-grid{
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    height: 80vh;
+  }
+  .page-grid .modal-container{
+    align-items: end;
+  }
+}
